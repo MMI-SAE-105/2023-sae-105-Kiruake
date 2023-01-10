@@ -12,7 +12,7 @@
 
 <body>
 
-     <header class="Header">
+    <header class="Header">
 
         <h2 style="padding-left: 20px;padding-top: 20px;">Art'strait</h2>
         <button aria-controls="MenuPrincipal" @click="MenuIsOpen= !MenuIsOpen">
@@ -21,68 +21,110 @@
 
         <nav id="MenuPrincipal" x-show="MenuIsOpen" x-transition.duration.800ms>
 
-            <ul style="padding-left: 0px;">
+            <ul style="padding-left: 0;">
 
                 <h3 class="TexteCentre" style="color: #F15A22;">Artistes</h3>
                 <div class="Barre"></div>
 
-               <a href="./Kandisky.html"><li>Vassily Kandinsky</li></a>
-                <li>František Kupka</li>
-                <li>Kasimir Malevitch</li>
-                <li>Jackson Pollock </li>
+                <a href="./Kandisky.html">
+                    <li>Vassily Kandinsky</li>
+                </a>
+                <a href="./Kupka.html">
+                    <li>František Kupka</li>
+                </a>
+                <a href="./Malevitch.html">
+                    <li>Kasimir Malevitch</li>
+                </a>
+                <a href="./Pollock.html">
+                    <li>Jackson Pollock </li>
+                </a>
 
                 <h3 class="TexteCentre" style="color: #F15A22;">Art</h3>
                 <div class="Barre"></div>
 
-                <li>Billeterie</li>
-                <li>A propos</li>
-                <li>Contact</li>
+                <a href="billeterie-art-abstrait.fr">
+                    <li>Billeterie</li>
+                </a>
+                <a href="./APropos.html">
+                    <li>A propos</li>
+                </a>
+                <a href="./Contact.html">
+                    <li>Contact</li>
+                </a>
             </ul>
 
         </nav>
-
     </header>
 
+    <div class="BackgroundArtiste1">
+        <h1 class="TexteCentre" style="margin-top:70px;padding-top: 40px;">František Kupka</h1>
 
-    <h1>František Kupka</h1>
+        <img src="./public/img/Kupka.png" class="ImageCentre" alt="">
+    </div>
 
-    <img src="./public/img/Kupka.png" alt="">
 
-    <h3>Sa vie</h3>
+    <div class="BackgroundArtiste2">
+        <h3 style="padding-left: 30px;margin-bottom: 4px;">Sa vie</h3>
+        <div class="Barre2"></div>
 
-    <p>František Kupka est né le 22 septembre 1871 à Opočno en Bohême Orientale (région de l’actuelle République
-        Tchèque) dans
-        une famille modeste. Il reçoit d’abord une formation artistique aux Beaux-Arts de Prague en 1884 qu’il poursuit
-        à Vienne
-        en Autriche. Il s’initie à la même période à la philosophie, la littérature, l’histoire naturelle ou encore
-        l’occultisme. Autant d’éléments qui ont marqué durablement sa vie et sa carrière.</p>
+        <p style="padding-left: 18px;padding-right: 6px;">František Kupka est né le 22 septembre 1871 à Opočno en
+            Bohême
+            Orientale (région de l’actuelle République
+            Tchèque) dans
+            une famille modeste. Il reçoit d’abord une formation artistique aux Beaux-Arts de Prague en 1884 qu’il
+            poursuit
+            à Vienne
+            en Autriche. Il s’initie à la même période à la philosophie, la littérature, l’histoire naturelle ou encore
+            l’occultisme. Autant d’éléments qui ont marqué durablement sa vie et sa carrière.</p>
 
-    <h3>Arrivé à Paris</h3>
+        <h3 style="padding-left: 30px;margin-bottom: 4px;">Arrivé à Paris</h3>
+        <div class="Barre2"></div>
 
-    <p>Kupka s’installe à Paris en 1896 et gagne sa vie comme illustrateur. Il se consacre dans un premier temps
-        uniquement au
-        dessin satirique en collaborant avec des revues comme L’Assiette au beurre. Ressentant par la suite le besoin de
-        s’émanciper de ce type de réalisation, il se tourne vers l’illustration d’ouvrage littéraire.</p>
+        <p style="padding-left: 18px;padding-right: 6px;">Kupka s’installe à Paris en 1896 et gagne sa vie comme
+            illustrateur. Il se consacre dans un premier temps
+            uniquement au
+            dessin satirique en collaborant avec des revues comme L’Assiette au beurre. Ressentant par la suite le
+            besoin de
+            s’émanciper de ce type de réalisation, il se tourne vers l’illustration d’ouvrage littéraire.</p>
 
-    <h3>Des couleurs en France</h3>
+    </div>
 
-    <p>En exposant deux grandes toiles non figuratives au Salon d’automne de 1912, Kupka se révèle comme l’un des
-        protagonistes
-        majeurs de la peinture abstraite. C’est la première fois que des œuvres non-figuratives sont exposées en France
-        et les
-        critiques sont négatives.</p>
+    <div class="BackgroundArtiste1">
+        <h3 style="padding-left: 30px;margin-bottom: 4px; padding-top: 20px;">Des couleurs en France</h3>
+        <div class="Barre2"></div>
 
-    <p>Pourtant, ses toiles, rythmées en gammes colorées et musicales, vibrent désormais de l’énergie, du mouvement, de
-        la
-        fluidité de la vie. Elles rayonnent.</p>
+        <p style="padding-left: 18px;padding-right: 6px;">En exposant deux grandes toiles non figuratives au Salon
+            d’automne
+            de 1912, Kupka se révèle comme l’un des
+            protagonistes
+            majeurs de la peinture abstraite. C’est la première fois que des œuvres non-figuratives sont exposées en
+            France
+            et les
+            critiques sont négatives.</p>
 
-    <h2>Ses principales oeuvres</h2>
+        <p style="padding-left: 18px;padding-right: 6px;">Pourtant, ses toiles, rythmées en gammes colorées et
+            musicales,
+            vibrent désormais de l’énergie, du mouvement, de
+            la
+            fluidité de la vie. Elles rayonnent.</p>
 
-    <h3>“Sans-Titre”(Study for a Pochoir)</h3>
-    <img src="./public/img/Sans-Titre-Kupka.png" alt="">
+        <h2 class="TexteCentre" style="padding-top: 70px;">Ses principales oeuvres</h2>
 
-    <h3>Roseberys</h3>
-    <img src="./public/img/Roseberys.png" alt="">
+    </div>
+
+    <div class="BackgroundArtiste2">
+        <h3 class="TexteCentre" style="margin-bottom: 4px;padding-top: 20px;">“Sans-Titre”(Study for a Pochoir)</h3>
+        <div class="Barre2"></div>
+
+        <img src="./public/img/Sans-Titre-Kupka.png" class="ImageCentre" style="padding-top:40px" alt="">
+        <h3 class="TexteCentre" style="padding-top: 60px;">"Roseberys"</h3>
+    </div>
+
+    <div class="BackgroundArtiste1">
+    <img src="./public/img/Roseberys.png" class="ImageCentre" alt="">
+    <img src="./public/img/Decoration-footer.png" style="margin-top: 60px ;" alt="">
+    </div>
+
 
     <footer>
 
