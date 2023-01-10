@@ -90,5 +90,13 @@ li {
     background-color: black;
     width: 278px;
     height: 1px;
-    margin-left:12px;
+    margin-left: 12px;
+}
+
+.Barre3 {
+    content: "";
+    background-color: black;
+    width: 97px;
+    height: 1px;
+
 }
