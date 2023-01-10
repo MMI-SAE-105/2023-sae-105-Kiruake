@@ -3,3 +3,8 @@ header {
     background-color: #F15A22;
     height: 70pX;
 }
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+}
