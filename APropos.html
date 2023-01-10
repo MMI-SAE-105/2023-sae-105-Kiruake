@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{MenuIsOpen: false}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art'bstrait</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+
+<body>
+
+    <header class="Header">
+
+        <h2 style="padding-left: 20px;padding-top: 20px;">Art'strait</h2>
+        <button aria-controls="MenuPrincipal" @click="MenuIsOpen= !MenuIsOpen">
+            <img src="./public/img/BoutonMenu.svg" style="padding-right: 20px;" alt="">
+        </button>
+
+        <nav id="MenuPrincipal" x-show="MenuIsOpen" x-transition.duration.800ms>
+
+            <ul style="padding-left: 0;">
+
+                <h3 class="TexteCentre" style="color: #F15A22;">Artistes</h3>
+                <div class="Barre"></div>
+
+                <a href="./Kandisky.html">
+                    <li>Vassily Kandinsky</li>
+                </a>
+                <a href="./Kupka.html">
+                    <li>František Kupka</li>
+                </a>
+                <a href="./Malevitch.html">
+                    <li>Kasimir Malevitch</li>
+                </a>
+                <a href="./Pollock.html">
+                    <li>Jackson Pollock </li>
+                </a>
+
+                <h3 class="TexteCentre" style="color: #F15A22;">Art</h3>
+                <div class="Barre"></div>
+
+                <a href="billeterie-art-abstrait.fr">
+                    <li>Billeterie</li>
+                </a>
+                <a href="./APropos.html">
+                    <li>A propos</li>
+                </a>
+                <a href="./Contact.html">
+                    <li>Contact</li>
+                </a>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <h1>A propos</h1>
+    <p>Art’strait est une exposition temporaire sur le mouvement de l’art abstrait du 13 avril au 23 juin 2021. Mettre
+        en avant
+        le 3ème art auprès des jeunes est la valeur que nous voulons transmettre. Préparez vous à rentrer dans une
+        nouvelle
+        dimension, qui est l’abstrait.</p>
+
+    <h3>Horaires</h3>
+    <p>Tous les jours de 11h à 20h, sauf le lundi. mardi, jusqu'à 22h.</p>
+    <p>La fermeture des salles débute à 19h45 (21h45 les mardis).</p>
+
+    <h3>Tarifs</h3>
+    <p>-Plein tarif ⇒ 11€ <br>
+        -Tarif réduit ⇒ 7,50€ <br>
+        -Réduction 13 - 25 ans ⇒ 5€ <br>
+        -Fondation Cartier Pass ⇒ 18€ - 50€</p>
+    <p>-Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass,
+        Etudiants Gratuit</p>
+
+    <footer>
+
+        <h2 style="margin-left: 18px; padding-top: 40px;">Mentions légales</h2>
+        <p style="margin-left: 18px;">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI
+            montbéliard</p>
+
+        <h2 style="margin-left: 18px;">Me contacter</h2>
+        <p style="margin-left: 18px;">Formulaire de contact</p>
+        <a href="mailto:ayrton.chaves08@gmail.com" style="margin-left: 18px;">ayrton.chaves08@gmail.com</a>
+
+        <h2 style="margin-left: 18px;">Mes réseaux</h2>
+
+        <div class="Gallery">
+            <img src="./public/img/LogoTwitter.svg" style="padding-right:35px" alt="Logo Twitter">
+            <img src="./public/img/LogoInsta.svg" alt="Logo Twitter">
+        </div>
+
+    </footer>
+
+</body>
+
+
+</html>
