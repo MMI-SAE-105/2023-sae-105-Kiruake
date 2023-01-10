@@ -9,13 +9,13 @@ body {
 
 h1,
 h2,
-h3{
+h3 {
     font-family: "Fluox";
 }
 
 p {
     font-family: "Nunito";
-    
+
 
 }
 
@@ -29,11 +29,11 @@ p {
 }
 
 .BackgroundAbstrait {
-    background-image: url('../../public/img/Background-Abstrait.png' );
+    background-image: url('../../public/img/Background-Abstrait.png');
     height: 553px;
     width: 375px;
     margin: -1.125em;
-    
+
 }
 
 
@@ -63,4 +63,23 @@ p {
 
 :any-link {
     color: white;
+}
+
+
+li {
+    margin-left: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    position: relative; 
+    padding-top: 40px;
+    font-family: 'Fluox';
+}
+
+.Barre {
+    content: "";
+    background-color: #F15A22;
+    width: 317px;
+    height: 2px;
+    margin: auto;
 }
