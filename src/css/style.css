@@ -1,1 +1,11 @@
 @import url(./fonts/font.css);
+
+h1,
+h2,
+h3{
+    font-family: "Fluox___.ttf";
+}
+
+p {
+    font-family: "Nunito.ttf";
+}
