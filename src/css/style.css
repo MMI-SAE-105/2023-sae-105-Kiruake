@@ -62,7 +62,8 @@ p {
 
 
 :any-link {
-    color: white;
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -71,7 +72,7 @@ li {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    position: relative; 
+    position: relative;
     padding-top: 40px;
     font-family: 'Fluox';
 }
@@ -82,4 +83,12 @@ li {
     width: 317px;
     height: 2px;
     margin: auto;
+}
+
+.Barre2 {
+    content: "";
+    background-color: black;
+    width: 278px;
+    height: 1px;
+    margin-left:12px;
 }

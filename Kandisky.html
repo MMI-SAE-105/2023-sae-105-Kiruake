@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{MenuIsOpen: false}">
 
 <head>
     <meta charset="UTF-8">
@@ -12,19 +12,46 @@
 
 <body>
 
-    <header>
-        <div class="Header">
-            <h2 style="padding-left: 20px;">Art'strait</h2>
+    <header class="Header">
+    
+        <h2 style="padding-left: 20px;padding-top: 20px;">Art'strait</h2>
+        <button aria-controls="MenuPrincipal" @click="MenuIsOpen= !MenuIsOpen">
             <img src="./public/img/BoutonMenu.svg" style="padding-right: 20px;" alt="">
-        </div>
-
+        </button>
+    
+        <nav id="MenuPrincipal" x-show="MenuIsOpen" x-transition.duration.800ms>
+    
+            <ul style="padding-left: 0px;">
+    
+                <h3 class="TexteCentre" style="color: #F15A22;">Artistes</h3>
+                <div class="Barre"></div>
+    
+                <a href="./Kandisky.html">
+                    <li>Vassily Kandinsky</li>
+                </a>
+                <li>František Kupka</li>
+                <li>Kasimir Malevitch</li>
+                <li>Jackson Pollock </li>
+    
+                <h3 class="TexteCentre" style="color: #F15A22;">Art</h3>
+                <div class="Barre"></div>
+    
+                <li>Billeterie</li>
+                <li>A propos</li>
+                <li>Contact</li>
+            </ul>
+    
+        </nav>
+    
     </header>
+
 
 <h1>Vassily Kandinsky</h1>
 <p>« Créer une œuvre d’art, c’est créer un monde. »</p>
 <img src="./public/img/Kandisky.png" alt="">
 
 <h3>Le Premier</h3>
+<div class="Barre2"></div>
 
 <p>Pionnier de l’art abstrait, Vassily Kandinsky (1866 – 1944) n’est pas seulement russe : il est avant tout un artiste
 international qui a vécu plusieurs années à Paris, a voyagé en Europe, et s’est fait connaître par son essai théorique
@@ -33,6 +60,7 @@ décisif dans la naissance de l’abstraction. Il est à l’origine d’un lang
 et qui fait appel à la musicalité</p>
 
 <h3>Le début de sa carrière</h3>
+<div class="Barre2"></div>
 
 <p>Vassily Kandinsky est né à Moscou, C’est un enfant extrêmement sensible, en particulier à la couleur. La découverte d’un
 tableau impressionniste de Claude Monet le marque considérablement et détermine sa vocation d’artiste.</p>
@@ -41,6 +69,7 @@ tableau impressionniste de Claude Monet le marque considérablement et détermin
 décide de tout abandonner pour se consacrer à la peinture, sa passion secrète !</p>
 
 <h2>Ses principales oeuvres</h2>
+
 
 <h3>Jaune-Rouge-Bleu</h3>
 <img src="./public/img/JauneRougeBleu.png" alt="">

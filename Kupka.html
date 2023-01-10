@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{MenuIsOpen: false}">
 
 <head>
     <meta charset="UTF-8">
@@ -12,13 +12,37 @@
 
 <body>
 
-    <header>
-        <div class="Header">
-            <h2 style="padding-left: 20px;">Art'strait</h2>
+    <  <header class="Header">
+
+        <h2 style="padding-left: 20px;padding-top: 20px;">Art'strait</h2>
+        <button aria-controls="MenuPrincipal" @click="MenuIsOpen= !MenuIsOpen">
             <img src="./public/img/BoutonMenu.svg" style="padding-right: 20px;" alt="">
-        </div>
+        </button>
+
+        <nav id="MenuPrincipal" x-show="MenuIsOpen" x-transition.duration.800ms>
+
+            <ul style="padding-left: 0px;">
+
+                <h3 class="TexteCentre" style="color: #F15A22;">Artistes</h3>
+                <div class="Barre"></div>
+
+               <a href="./Kandisky.html"><li>Vassily Kandinsky</li></a>
+                <li>František Kupka</li>
+                <li>Kasimir Malevitch</li>
+                <li>Jackson Pollock </li>
+
+                <h3 class="TexteCentre" style="color: #F15A22;">Art</h3>
+                <div class="Barre"></div>
+
+                <li>Billeterie</li>
+                <li>A propos</li>
+                <li>Contact</li>
+            </ul>
+
+        </nav>
 
     </header>
+
 
     <h1>František Kupka</h1>
 
