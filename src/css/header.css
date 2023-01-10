@@ -2,9 +2,36 @@ header {
     margin: -1.125em;
     background-color: #F15A22;
     height: 70pX;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .Header {
     display: flex;
     justify-content: space-between;
+}
+
+
+button {
+    position: relative;
+    appearance: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 2;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+nav {
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background: white;
+    z-index: 1;
+
 }
