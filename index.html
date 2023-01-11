@@ -73,57 +73,41 @@
 
 
         <section>
-
-            <div class="Carrousel" x-data="{}">
-                <button id="gauche" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"></button>
-                <button id="droite" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth"></button>
-
-                <div class="ParentCarrousel" x-ref="parent">
-
-                    <div id="Image1" class="ImageCarrousel">
+            <div class="carrousel" x-data="{}">
+                <button @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"
+                    class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"> </button>
+                <button @click="$refs.parent.scrollLeft += $refs.parent.clientWidth"
+                    class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"></button>
+                <div class="carrousel_parent-image" x-ref="parent">
+                    <div id="ecran-1" class="carrousel_image">
                         <figure>
-                            <a href="./FR/Kandisky.html"> <img src="./public/img/Kandisky.png"> </a>
-                            <figcaption>Kandinsky</figcaption>
+                            <a href="./FR/Kandisky.html"><img src="./public/img/Kandisky.png" alt="image ecran 1"></a>
+                            <figcaption>Kandisky</figcaption>
                         </figure>
                     </div>
-
-
-                    <div id="Image2" class="ImageCarrousel">
+                    <div id="ecran-2" class="carrousel_image">
                         <figure>
-                            <a href="./FR/Kupka.html"> <img src="./public/img/Kupka.png"> </a>
+                            <a href="./FR/Kupka.html"><img src="./public/img/Kupka.png" alt="image ecran 2"></a>
                             <figcaption>Kupka</figcaption>
                         </figure>
                     </div>
-
-
-                    <div id="Image3" class="ImageCarrousel">
+                    <div id="ecran-3" class="carrousel_image">
                         <figure>
-                            <a href="./FR/Malevitch.html"> <img src="./public/img/Malevitch.png"> </a>
-                            <figcaption>Malevitch</figcaption>
+                            <a href="./FR/Malevitch.html"><img src="./public/img/Malevitch.png" alt="image ecran 3"></a>
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div id="ecran-4" class="carrousel_image">
+                        <figure>
+                            <a href="./FR/Pollock.html"><img src="./public/img/Pollock.png" alt="image ecran 4"></a>
+                            <figcaption></figcaption>
                         </figure>
                     </div>
 
-                    <div id="Image4" class="ImageCarrousel">
-                        <figure>
-                            <a href="./FR/Pollock.html"> <img src="./public/img/Pollock.png"> </a>
-                            <figcaption>Pollock</figcaption>
-                        </figure>
-                    </div>
 
                 </div>
-            </div>
-
         </section>
 
-
-
-
-
-
-
-
-
-        </section>
 
         <img src="./public/img/Kandisky.png" class="ImageCentre" style="padding-top: 20px;" alt="Le peintre Kandisky">
 

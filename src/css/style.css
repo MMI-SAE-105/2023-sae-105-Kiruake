@@ -145,10 +145,34 @@ label {
 
 /* Carrousel */
 
-.Carrousel {
+.carrousel {
     display: flex;
     width: 95%;
+    position: relative;
     overflow-x: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
 }
+
+.carrousel_Image {
+ width: 70%;
+ flex: none;  
+ scroll-snap-align: start;
+ margin-top: 5%;
+ margin-bottom: 5%;
+ margin-left: 5%;
+}
+
+.carrousel_Image figure {
+    margin: 0;
+}
+
+.carrousel_parent-image {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+
