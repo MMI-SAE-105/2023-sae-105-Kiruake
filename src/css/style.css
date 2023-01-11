@@ -140,3 +140,15 @@ label {
     padding: 5px;
 
 }
+
+
+
+/* Carrousel */
+
+.Carrousel {
+    display: flex;
+    width: 95%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
