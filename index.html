@@ -26,17 +26,31 @@
                 <h3 class="TexteCentre" style="color: #F15A22;">Artistes</h3>
                 <div class="Barre"></div>
 
-               <a href="./FR/Kandisky.html"><li>Vassily Kandinsky</li></a>
-               <a href="./FR/Kupka.html"><li>František Kupka</li> </a>
-            <a href="./FR/Malevitch.html"><li>Kasimir Malevitch</li></a>
-               <a href="./FR/Pollock.html"><li>Jackson Pollock </li> </a>
+                <a href="./FR/Kandisky.html">
+                    <li>Vassily Kandinsky</li>
+                </a>
+                <a href="./FR/Kupka.html">
+                    <li>František Kupka</li>
+                </a>
+                <a href="./FR/Malevitch.html">
+                    <li>Kasimir Malevitch</li>
+                </a>
+                <a href="./FR/Pollock.html">
+                    <li>Jackson Pollock </li>
+                </a>
 
                 <h3 class="TexteCentre" style="color: #F15A22;">Art</h3>
                 <div class="Barre"></div>
 
-              <a href="billeterie-art-abstrait.fr"><li>Billeterie</li></a>
-               <a href="./FR/APropos.html"><li>A propos</li> </a>
-               <a href="./FR/Contact.html"><li>Contact</li> </a>
+                <a href="billeterie-art-abstrait.fr">
+                    <li>Billeterie</li>
+                </a>
+                <a href="./FR/APropos.html">
+                    <li>A propos</li>
+                </a>
+                <a href="./FR/Contact.html">
+                    <li>Contact</li>
+                </a>
             </ul>
 
         </nav>
@@ -56,6 +70,28 @@
 
         <h2 class="TexteCentre" style="padding-top: 26px;">Les pilliers du mouvement abstraits</h2>
         <h3 class="TexteCentre">Vassily Kandinsky</h3>
+
+
+        <section>
+
+            <div class="Carrousel" x-data="{}">
+                <button id="gauche" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"></button>
+                <button id="droite" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth"></button>
+
+                <div class="ParentCarrousel" x-ref="parent">
+                    <div id="Cadre1" class="Image1">
+                        
+                        <figure></figure>
+
+
+
+
+
+
+
+
+
+        </section>
 
         <img src="./public/img/Kandisky.png" class="ImageCentre" style="padding-top: 20px;" alt="Le peintre Kandisky">
 
@@ -82,12 +118,12 @@
 
         <h2 style="margin-left: 18px;">Mes réseaux</h2>
 
-<div class="Gallery">
-    <a href="https://twitter.com/ayrt_chvs"><img src="./public/img/LogoTwitter.svg" style="padding-right:35px"
-            alt="Logo Twitter"> </a>
-    <a href="https://www.instagram.com/ayrton.chvs/"> <img src="./public/img/LogoInsta.svg" alt="Logo Insta">
-    </a>
-</div>
+        <div class="Gallery">
+            <a href="https://twitter.com/ayrt_chvs"><img src="./public/img/LogoTwitter.svg" style="padding-right:35px"
+                    alt="Logo Twitter"> </a>
+            <a href="https://www.instagram.com/ayrton.chvs/"> <img src="./public/img/LogoInsta.svg" alt="Logo Insta">
+            </a>
+        </div>
 
     </footer>
 
