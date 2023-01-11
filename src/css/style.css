@@ -141,6 +141,12 @@ label {
 
 }
 
+.BtnTrad {
+    display: flex;
+    width: 25px;
+    padding-left: 120px;
+    padding-top: 35px;
+}
 
 
 /* Carrousel */

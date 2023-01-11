@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{MenuIsOpen: false}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art'bstrait</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+
+<body>
+
+    <header class="Header">
+
+        <h2 style="padding-left: 20px;padding-top: 20px;">Art'strait</h2>
+        <a href="../index.html"><img src="../public/img/BoutonTrad.svg" class="BtnTrad" alt=""> </a>
+        <button aria-controls="MenuPrincipal" @click="MenuIsOpen= !MenuIsOpen">
+            <img src="../public/img/BoutonMenu.svg" style="padding-right: 20px;" alt="">
+        </button>
+        <nav id="MenuPrincipal" x-show="MenuIsOpen" x-transition.duration.800ms>
+
+            <ul style="padding-left: 0;">
+
+                <h3 class="TexteCentre" style="color: #F15A22;">Artistes</h3>
+                <div class="Barre"></div>
+
+                <a href="./FR/Kandisky.html">
+                    <li>Vassily Kandinsky</li>
+                </a>
+                <a href="./FR/Kupka.html">
+                    <li>František Kupka</li>
+                </a>
+                <a href="./FR/Malevitch.html">
+                    <li>Kasimir Malevitch</li>
+                </a>
+                <a href="./FR/Pollock.html">
+                    <li>Jackson Pollock </li>
+                </a>
+
+                <h3 class="TexteCentre" style="color: #F15A22;">Art</h3>
+                <div class="Barre"></div>
+
+                <a href="billeterie-art-abstrait.fr">
+                    <li>Billeterie</li>
+                </a>
+                <a href="./FR/APropos.html">
+                    <li>A propos</li>
+                </a>
+                <a href="./FR/Contact.html">
+                    <li>Contact</li>
+                </a>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <h1 class="TexteCentre" style="margin-top: 90px;">Bienvenu !</h1>
+
+    <p>L'art abstrait est l'une des principales tendances qui se sont affirmées dans la peinture et la sculpture du XXe
+        siècle.</p>
+    <p>L'art abstrait est un mouvement international qui domine tout le XXe siècle. Il se positionne en rupture avec une
+        conception traditionnelle de l'art comme imitation de la nature. Il ne représente pas des sujets ou des objets
+        du monde
+        naturel, mais des formes et des couleurs pour elles-mêmes</p>
+
+    <div id="Artistes" class="BackgroundAbstrait" style="margin-top: 80px;">
+
+        <h2 class="TexteCentre" style="padding-top: 26px;">Les pilliers du mouvement abstraits</h2>
+        <h3 class="TexteCentre">Vassily Kandinsky</h3>
+
+
+        <section>
+            <div class="carrousel" x-data="{}">
+                <button @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"
+                    class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"> </button>
+                <button @click="$refs.parent.scrollLeft += $refs.parent.clientWidth"
+                    class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"></button>
+                <div class="carrousel_parent-image" x-ref="parent">
+                    <div id="ecran-1" class="carrousel_image">
+                        <figure>
+                            <a href="./FR/Kandisky.html"><img src="./public/img/Kandisky.png" alt="image ecran 1"></a>
+                            <figcaption>Kandisky</figcaption>
+                        </figure>
+                    </div>
+                    <div id="ecran-2" class="carrousel_image">
+                        <figure>
+                            <a href="./FR/Kupka.html"><img src="./public/img/Kupka.png" alt="image ecran 2"></a>
+                            <figcaption>Kupka</figcaption>
+                        </figure>
+                    </div>
+                    <div id="ecran-3" class="carrousel_image">
+                        <figure>
+                            <a href="./FR/Malevitch.html"><img src="./public/img/Malevitch.png" alt="image ecran 3"></a>
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div id="ecran-4" class="carrousel_image">
+                        <figure>
+                            <a href="./FR/Pollock.html"><img src="./public/img/Pollock.png" alt="image ecran 4"></a>
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+
+
+                </div>
+        </section>
+
+    </div>
+
+    <h2 style="margin-top: 80px;margin-bottom: 70px;">Frise chronologique des dates du début de chaque mouvements après
+        1850</h2>
+    <img src="../public/img/Frise.png" alt="Frise chronologique des mouvements">
+
+    <h2 style="margin-top: 80px;margin-bottom: 30px;" class="TexteCentre">Art’strait expo</h2>
+    <p>Vous voulez en savoir + sur l’abstrait ? <br> Voir des œuvres en pleine exposition ? <br> Vous êtes au bon
+        endroit.</p>
+    <img src="../public/img/Decoration-footer.png" style="margin-top: 60px;" alt="Décoration footer">
+
+    <footer>
+
+        <h2 style="margin-left: 18px; padding-top: 40px;">Mentions légales</h2>
+        <p style="margin-left: 18px;">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI
+            montbéliard</p>
+
+        <h2 style="margin-left: 18px;">Me contacter</h2>
+        <p style="margin-left: 18px;">Formulaire de contact</p>
+        <a href="mailto:ayrton.chaves08@gmail.com" style="margin-left: 18px;">ayrton.chaves08@gmail.com</a>
+
+        <h2 style="margin-left: 18px;">Mes réseaux</h2>
+
+        <div class="Gallery">
+            <a href="https://twitter.com/ayrt_chvs"><img src="../public/img/LogoTwitter.svg" style="padding-right:35px"
+                    alt="Logo Twitter"> </a>
+            <a href="https://www.instagram.com/ayrton.chvs/"> <img src="../public/img/LogoInsta.svg" alt="Logo Insta">
+            </a>
+        </div>
+
+    </footer>
+
+</body>
+
+
+</html>
