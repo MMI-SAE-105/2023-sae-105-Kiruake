@@ -9,7 +9,9 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h5,
+label {
     font-family: "Fluox";
 }
 
@@ -98,5 +100,43 @@ li {
     background-color: black;
     width: 97px;
     height: 1px;
+
+}
+
+.Form1 {
+    border: solid;
+}
+
+.Formulaire {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+.Formulaire>div {
+    margin-top: 30px;
+}
+
+input {
+    background-color: white;
+    border: none;
+    outline: none;
+}
+
+label {
+    border-right: solid;
+    padding-right: 4px;
+    padding-left: 1px;
+}
+
+.BtnEnvoyer {
+    cursor: pointer;
+    z-index: 0;
+    border: solid;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 120px;
+    padding: 5px;
 
 }

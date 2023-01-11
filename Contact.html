@@ -58,55 +58,62 @@
     </header>
 
 
+    <h1 class="TexteCentre" style="margin-top:70px;padding-top: 40px;">Formulaire de contact</h1>
+
+    <form class="Formulaire">
+
+        <div class="Form1" style="margin-top:30px">
+            <label for="Nom">Nom*</label>
+            <input type="text" id="nom" name="nom" required minlength="2" maxlength="16" size="20">
+        </div>
+
+        <div class="Form1">
+            <label for="Prénom">Prénom*</label>
+            <input type="text" id="Prénom" name="Prénom" required minlength="2" maxlength="16" size="20 ">
+        </div>
+
+        <div class="Form1">
+            <label for="Sujet">Sujet</label>
+            <input type="text" id="Sujet" name="Sujet" required minlength="2" maxlength="16" size="20 ">
+        </div>
+
+        <div class="Form1">
+            <label style="padding-top: 25px; padding-bottom: 27px;" for=" Message">Message</label>
+            <input style="height:70px" type="text-area" id="Message" name="Message" required minlength="15"
+                maxlength="  " size="28px">
+        </div>
 
 
-<form style="margin-top: 50px;">
+        <div x-data="{ Open: false }">
+            <button id="Envoyer" class="BtnEnvoyer" type="reset" aria-controls="Formulaire" @click="Open= !Open">
+                Envoyer
+            </button>
+            <h5 style="text-align: center; position: absolute, center;color: black;" x-show="Open">Merci de votre
+                contribution !</h5>
+        </div>
 
-    <div style="margin-top:30px">
-        <label style="border-right: solid;" for="Nom">Nom*</label>
-        <input type="text" id="name" name="name" required minlength="2" maxlength="16" size="10">
-    </div>
+    </form>
 
-    <div>
-        <label for="Prénom">Prénom*</label>
-        <input type="text" id="Prénom" name="Prénom" required minlength="2" maxlength="16" size="10 ">
-    </div>
+    <img src="./public/img/Decoration-footer.png" style="padding-top: 80px;" alt="">
 
-    <div>
-        <label for=" Message">Message</label>
-        <input style="height:70px" type="text-area" id="Message" name="Message" required minlength="15" maxlength="  "
-            size="28px">
-    </div>
+    <footer>
 
+        <h2 style="margin-left: 18px; padding-top: 40px;">Mentions légales</h2>
+        <p style="margin-left: 18px;">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI
+            montbéliard</p>
 
-    <div x-data="{ Open: false }">
-        <button id="Envoyer" type="reset" aria-controls="Formulaire" @click="Open= !Open">
-            Envoyer
-        </button>
-        <p style="text-align: center; position: absolute, center;color: black;" x-show="Open">Merci de votre
-            contribution !</p>
-    </div>
+        <h2 style="margin-left: 18px;">Me contacter</h2>
+        <p style="margin-left: 18px;">Formulaire de contact</p>
+        <a href="mailto:ayrton.chaves08@gmail.com" style="margin-left: 18px;">ayrton.chaves08@gmail.com</a>
 
-</form>
+        <h2 style="margin-left: 18px;">Mes réseaux</h2>
 
-<footer>
+        <div class="Gallery">
+            <img src="./public/img/LogoTwitter.svg" style="padding-right:35px" alt="Logo Twitter">
+            <img src="./public/img/LogoInsta.svg" alt="Logo Twitter">
+        </div>
 
-    <h2 style="margin-left: 18px; padding-top: 40px;">Mentions légales</h2>
-    <p style="margin-left: 18px;">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI
-        montbéliard</p>
-
-    <h2 style="margin-left: 18px;">Me contacter</h2>
-    <p style="margin-left: 18px;">Formulaire de contact</p>
-    <a href="mailto:ayrton.chaves08@gmail.com" style="margin-left: 18px;">ayrton.chaves08@gmail.com</a>
-
-    <h2 style="margin-left: 18px;">Mes réseaux</h2>
-
-    <div class="Gallery">
-        <img src="./public/img/LogoTwitter.svg" style="padding-right:35px" alt="Logo Twitter">
-        <img src="./public/img/LogoInsta.svg" alt="Logo Twitter">
-    </div>
-
-</footer>
+    </footer>
 
 </body>
 
