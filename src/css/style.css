@@ -33,7 +33,7 @@ p {
 .BackgroundAbstrait {
     background-image: url('../../public/img/Background-Abstrait.png');
     height: 553px;
-    width: 375px;
+    width: 100%;
     margin: -1.125em;
 
 }
@@ -42,7 +42,7 @@ p {
 .BackgroundArtiste1 {
     background-image: url('../../public/img/BackgroundArtiste1.png');
     height: 479px;
-    width: 375px;
+    width: 100%;
     margin: -1.125em;
 
 }
@@ -50,7 +50,7 @@ p {
 .BackgroundArtiste2 {
     background-image: url('../../public/img/BackgroundArtiste2.png');
     height: 479px;
-    width: 375px;
+    width: 100%;
     margin: -1.125em;
 
 }
