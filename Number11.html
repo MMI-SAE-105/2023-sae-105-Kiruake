@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{MenuIsOpen: false}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art'bstrait</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+
+<body>
+
+    <header class="Header">
+
+        <a href="./index.html">
+            <h2 style="padding-left: 20px;padding-top: 20px;">Art'strait</h2>
+        </a>
+        <button aria-controls="MenuPrincipal" @click="MenuIsOpen= !MenuIsOpen">
+            <img src="./public/img/BoutonMenu.svg" style="padding-right: 20px;" alt="">
+        </button>
+
+        <nav id="MenuPrincipal" x-show="MenuIsOpen" x-transition.duration.800ms>
+
+            <ul style="padding-left: 0;">
+
+                <h3 class="TexteCentre" style="color: #F15A22;">Artistes</h3>
+                <div class="Barre"></div>
+
+                <a href="./Kandisky.html">
+                    <li>Vassily Kandinsky</li>
+                </a>
+                <a href="./Kupka.html">
+                    <li>František Kupka</li>
+                </a>
+                <a href="./Malevitch.html">
+                    <li>Kasimir Malevitch</li>
+                </a>
+                <a href="./Pollock.html">
+                    <li>Jackson Pollock </li>
+                </a>
+
+                <h3 class="TexteCentre" style="color: #F15A22;">Art</h3>
+                <div class="Barre"></div>
+
+                <a href="billeterie-art-abstrait.fr">
+                    <li>Billeterie</li>
+                </a>
+                <a href="./APropos.html">
+                    <li>A propos</li>
+                </a>
+                <a href="./Contact.html">
+                    <li>Contact</li>
+                </a>
+            </ul>
+
+        </nav>
+    </header>
+
+    <h1>Number 11</h1>
+
+    <img src="./public/img/Number11.png" alt="">
+
+    <p>« Blue poles, number 11 » est une grande œuvre de 2, 10m sur 4, 86m, de format horizontal. Elle a été peinte en
+        1952,
+        par Jackson Pollock, avec de la peinture destinée normalement à la carrosserie automobile.</p>
+
+    <p>Il s'agit d'un tableau abstrait, il ne représente en effet rien d'identifiable. Les couleurs utilisées sont le
+        gris, le
+        blanc, le noir, le bleu marine, le jaune et le orange.</p>
+
+    <p>L’œuvre a été réalisée avec la technique élaborée par Pollock le dripping. C'est une technique nouvelle inspirée
+        des
+        indiens Navajos qui réalisaient des œuvres en faisant couler des sables colorés sur le sol</p>
+
+    <img src="./public/img/Decoration-footer.png" alt="">
+
+    <footer>
+
+        <h2 style="margin-left: 18px; padding-top: 40px;">Mentions légales</h2>
+        <p style="margin-left: 18px;">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI
+            montbéliard</p>
+
+        <h2 style="margin-left: 18px;">Me contacter</h2>
+        <p style="margin-left: 18px;">Formulaire de contact</p>
+        <a href="mailto:ayrton.chaves08@gmail.com" style="margin-left: 18px;">ayrton.chaves08@gmail.com</a>
+
+        <h2 style="margin-left: 18px;">Mes réseaux</h2>
+
+        <div class="Gallery">
+            <img src="./public/img/LogoTwitter.svg" style="padding-right:35px" alt="Logo Twitter">
+            <img src="./public/img/LogoInsta.svg" alt="Logo Twitter">
+        </div>
+
+    </footer>
+
+</body>
